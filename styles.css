@@ -59,6 +59,10 @@ h1, p, span {font-weight: 300;}
 /* MAIN CONTENT---------------------------------------------- */
 /* ---------------------------------------------------------- */
 
+h1, p, .podcast, .form-btn {
+  opacity: .8;
+}
+
 .content-container {
   width: 87%;
   max-width: 28.125rem;
@@ -103,10 +107,10 @@ h1, p, span {font-weight: 300;}
   margin-bottom: 3rem;
 }
 
-.podcast.spotify {width: 3.5rem; height: 1.0625rem;}
-.podcast.apple {width: 2.8125rem; height: 1.0625rem;}
-.podcast.google {width: 4.5625rem; height: .6875rem;}
-.podcast.pocket {width: 4.8125rem; height: .9375rem;}
+.podcast.spotify {width: 3.5rem;}
+.podcast.apple {width: 2.8125rem;}
+.podcast.google {width: 4.5625rem;}
+.podcast.pocket {width: 4.8125rem;}
 
 
 
