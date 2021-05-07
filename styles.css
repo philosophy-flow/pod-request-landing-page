@@ -1,0 +1,68 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* COLORS */
+:root {
+  --green: #54E6AF;
+  --grey: #C2CBE5;
+  --dark-grey: #5A668A;
+  --very-dark-grey: #2C344B;
+  --dark-color: #121725;
+  --light-color: #FFF;
+}
+
+
+
+/* TYPOGRAPHY + BG COLOR */
+html {
+  font-size: 16px;
+  font-family: 'Chivo', sans-serif;
+}
+
+h1, p, span {font-weight: 300;}
+
+
+
+/* FORM  */
+
+.email-form {}
+
+.form-input {
+  width: 21.875rem;
+  height: 3.5rem;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--very-dark-grey);
+  padding-left: 2rem;
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: .875rem;
+  font-family: 'Chivo';
+
+  margin-bottom: 1rem;
+}
+
+.form-btn {
+  width: 10.125rem;
+  height: 2.875rem;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--green);
+  cursor: pointer;
+  font-size: .875rem;
+  font-family: 'Chivo';
+}
+
+/* no hover on mobile/tablet */
+@media (hover: hover) {
+.form-btn:hover { background-color: #B3FFE2; }
