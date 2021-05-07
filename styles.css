@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-/* GLOBAL RESET */
+/* ---------------------------------------------------------- */
+/* GLOBAL---------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 
 /* COLORS */
@@ -22,23 +24,97 @@
 }
 
 
-
-/* TYPOGRAPHY + BG COLOR */
+/* TYPOGRAPHY + BG */
 html {
   font-size: 16px;
   font-family: 'Chivo', sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  background-image: url("./assets/mobile/image-host.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .09;
+  z-index: -1;
 }
 
 h1, p, span {font-weight: 300;}
 
 
 
-/* FORM  */
+/* ---------------------------------------------------------- */
+/* MAIN CONTENT---------------------------------------------- */
+/* ---------------------------------------------------------- */
 
+.content-container {
+  width: 87%;
+  max-width: 28.125rem;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+
+/* LOGO & TEXT */
+.logo-container {
+  text-align: center;
+  margin-top: 3.875rem;
+  margin-bottom: 3.5625rem;
+}
+
+.main-text {
+  color: var(--light-color);
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.sub-text {
+  font-size: .9375rem;
+  line-height: 1.5625rem;
+  color: var(--grey);
+
+  margin-top: .9375rem;
+  margin-bottom: 2.0625rem;
+}
+
+
+/* PODCASTS */
+.podcasts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.podcast.spotify {width: 3.5rem; height: 1.0625rem;}
+.podcast.apple {width: 2.8125rem; height: 1.0625rem;}
+.podcast.google {width: 4.5625rem; height: .6875rem;}
+.podcast.pocket {width: 4.8125rem; height: .9375rem;}
+
+
+
+/* FORM  */
 .email-form {}
 
 .form-input {
-  width: 21.875rem;
+  width: 100%;
   height: 3.5rem;
   border-radius: 1.75rem;
   border: none;
@@ -53,7 +129,7 @@ h1, p, span {font-weight: 300;}
 }
 
 .form-btn {
-  width: 10.125rem;
+  width: 100%;
   height: 2.875rem;
   border-radius: 1.75rem;
   border: none;
@@ -61,8 +137,34 @@ h1, p, span {font-weight: 300;}
   cursor: pointer;
   font-size: .875rem;
   font-family: 'Chivo';
+  transition: .3s;
 }
 
 /* no hover on mobile/tablet */
 @media (hover: hover) {
 .form-btn:hover { background-color: #B3FFE2; }
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* BREAKPOINTS ---------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+/* xtra small screens */
+@media only screen and (max-width: 350px) {
+  .logo-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+}
+
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+}
