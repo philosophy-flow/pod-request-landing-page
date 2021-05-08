@@ -175,7 +175,17 @@ h1, p, .podcast, .form-btn {
 }
 
 
-/* tablet */
+/* tablet only */
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+  .green-dots {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
+/* medium screens */
 @media only screen and (min-width: 768px) {
   h1, p {opacity: 1;}
 
