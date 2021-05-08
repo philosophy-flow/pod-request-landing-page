@@ -134,7 +134,7 @@ h1, p, .podcast, .form-btn {
   margin-bottom: 1rem;
 }
 
-.form-input:focus, .form-btn:focus {border: 2px solid var(--grey);}
+.form-input:focus, .form-btn:focus {border: .125rem solid var(--grey);}
 
 .form-btn {
   width: 100%;
@@ -190,31 +190,31 @@ h1, p, .podcast, .form-btn {
   }
 
   .logo-container {
-    padding-top: 50px;
+    padding-top: 3.125rem;
     padding-bottom: .5rem;
-    padding-left: 39px;
+    padding-left: 2.4375rem;
   }
 
   .content-container {
     background-color: var(--dark-color);
     max-width: none;
-    width: 635px;
-    margin-top: 152px;
-    margin-left: 39px;
+    width: 39.6875rem;
+    margin-top: 9.5rem;
+    margin-left: 2.4375rem;
     padding-bottom: 2rem;
   }
 
   .main-text {
-    font-size: 48px;
-    line-height: 56px;
-    padding-top: 93px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding-top: 5.8125rem;
   }
 
   .sub-text {
-    font-size: 18px;
-    width: 445px;
-    margin-top: 31px;
-    margin-bottom: 40px;
+    font-size: 1.125rem;
+    width: 27.8125rem;
+    margin-top: 1.9375rem;
+    margin-bottom: 2.5rem;
   }
 
   /* swap position of form & podcast container */
@@ -227,19 +227,19 @@ h1, p, .podcast, .form-btn {
   /* FORM */
   .email-form {
     position: relative;
-    width: 427px;
+    width: 26.6875rem;
     height: 3.5rem;
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
   }
 
   .form-input {margin-bottom: 0;}
 
   .form-btn {
-    width: 162px;
+    width: 10.125rem;
     height: 2.875rem;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: .3125rem;
+    top: .3125rem;
   }
 
 
@@ -249,10 +249,10 @@ h1, p, .podcast, .form-btn {
     width: 90%;
   }
 
-  .podcast.spotify {width: 96px;}
-  .podcast.apple {width: 78px;}
-  .podcast.google {width: 125px;}
-  .podcast.pocket {width: 129px;}
+  .podcast.spotify {width: 6rem;}
+  .podcast.apple {width: 4.875rem;}
+  .podcast.google {width: 7.8125rem;}
+  .podcast.pocket {width: 8.0625rem;}
 }
 
 
