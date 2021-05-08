@@ -123,6 +123,7 @@ h1, p, .podcast, .form-btn {
   height: 3.5rem;
   border-radius: 1.75rem;
   border: none;
+  outline: none;
   background-color: var(--very-dark-grey);
   padding-left: 2rem;
   color: var(--light-color);
@@ -132,6 +133,8 @@ h1, p, .podcast, .form-btn {
 
   margin-bottom: 1rem;
 }
+
+.form-input:focus, .form-btn:focus {border: 2px solid var(--grey);}
 
 .form-btn {
   width: 100%;
@@ -143,6 +146,7 @@ h1, p, .podcast, .form-btn {
   font-size: .875rem;
   font-family: 'Chivo';
   transition: .3s;
+  outline: none;
 }
 
 /* no hover on mobile/tablet */
