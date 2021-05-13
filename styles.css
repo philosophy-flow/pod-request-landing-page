@@ -149,6 +149,13 @@ h1, p, .podcast, .form-btn {
   outline: none;
 }
 
+.error-txt {
+  margin-top: .5rem;
+  margin-left: .75rem;
+  color: #FB3E3E;
+  display: none;
+}
+
 /* no hover on mobile/tablet */
 @media (hover: hover) {
 .form-btn:hover { background-color: #B3FFE2; }
